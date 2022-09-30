@@ -11,6 +11,7 @@
 		58C90D5D28E76D8A0079F928 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C90D5C28E76D8A0079F928 /* ContentView.swift */; };
 		58C90D5F28E76D8C0079F928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C90D5E28E76D8C0079F928 /* Assets.xcassets */; };
 		58C90D6228E76D8C0079F928 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C90D6128E76D8C0079F928 /* Preview Assets.xcassets */; };
+		58C90D7228E79C540079F928 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C90D7128E79C540079F928 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		58C90D5C28E76D8A0079F928 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		58C90D5E28E76D8C0079F928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58C90D6128E76D8C0079F928 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58C90D7128E79C540079F928 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +53,11 @@
 		58C90D5928E76D8A0079F928 /* CryptoPricesApp */ = {
 			isa = PBXGroup;
 			children = (
-				58C90D5A28E76D8A0079F928 /* CryptoPricesAppApp.swift */,
+				58C90D6928E770100079F928 /* App */,
+				58C90D6C28E7702C0079F928 /* Core */,
+				58C90D6B28E770220079F928 /* Models */,
+				58C90D6A28E770180079F928 /* Extensions */,
+				58C90D6828E770030079F928 /* Utils */,
 				58C90D5C28E76D8A0079F928 /* ContentView.swift */,
 				58C90D5E28E76D8C0079F928 /* Assets.xcassets */,
 				58C90D6028E76D8C0079F928 /* Preview Content */,
@@ -65,6 +71,59 @@
 				58C90D6128E76D8C0079F928 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		58C90D6828E770030079F928 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		58C90D6928E770100079F928 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				58C90D5A28E76D8A0079F928 /* CryptoPricesAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		58C90D6A28E770180079F928 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		58C90D6B28E770220079F928 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		58C90D6C28E7702C0079F928 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				58C90D6D28E79BF00079F928 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		58C90D6D28E79BF00079F928 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				58C90D6E28E79C1D0079F928 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		58C90D6E28E79C1D0079F928 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58C90D7128E79C540079F928 /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C90D7228E79C540079F928 /* HomeView.swift in Sources */,
 				58C90D5D28E76D8A0079F928 /* ContentView.swift in Sources */,
 				58C90D5B28E76D8A0079F928 /* CryptoPricesAppApp.swift in Sources */,
 			);
