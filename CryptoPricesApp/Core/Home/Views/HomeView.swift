@@ -12,6 +12,11 @@ struct HomeView: View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
                 
+                // курс топовых монет
+                TopMoversView()
+                
+                // общий список всех монет
+                
             }
             .navigationTitle("Курс Live")
 
