@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var viewModel = HomeViewModel()
+    
     var body: some View {
         NavigationView {
             ScrollView(.vertical, showsIndicators: false) {
@@ -16,7 +17,7 @@ struct HomeView: View {
                 // курс топовых монет
                 TopMoversView()
                 Divider()
-                AllCoinsView()
+                AllCoinsView(viewModel: viewModel)
                 
                 // общий список всех монет
                 

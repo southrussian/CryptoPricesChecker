@@ -10,6 +10,7 @@
 import SwiftUI
 
 class HomeViewModel: ObservableObject {
+    @Published var coins = [CoinData]()
     func fetchCoin() {
     
         let urlStr = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h"
@@ -31,7 +32,8 @@ class HomeViewModel: ObservableObject {
             
             do {
                 let coins = try JSONDecoder().decode([CoinData].self, from: data)
-                print("DEBUG: Coins \(coins)")
+//                print("DEBUG: Coins \(coins)")
+                self.coins = coins
             } catch let error {
                 print("DEBUG: Failed \(error)")
             }
