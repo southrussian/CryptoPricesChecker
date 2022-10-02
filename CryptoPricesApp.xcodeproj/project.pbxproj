@@ -14,6 +14,8 @@
 		58C90D7228E79C540079F928 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C90D7128E79C540079F928 /* HomeView.swift */; };
 		58C90D7528E9F55F0079F928 /* TopMoversView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C90D7428E9F55F0079F928 /* TopMoversView.swift */; };
 		58C90D7728E9F57E0079F928 /* TopMoversItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C90D7628E9F57E0079F928 /* TopMoversItemView.swift */; };
+		58C90D7928EA02EA0079F928 /* AllCoinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C90D7828EA02EA0079F928 /* AllCoinsView.swift */; };
+		58C90D7B28EA02FC0079F928 /* RowCoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C90D7A28EA02FC0079F928 /* RowCoinView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		58C90D7128E79C540079F928 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		58C90D7428E9F55F0079F928 /* TopMoversView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversView.swift; sourceTree = "<group>"; };
 		58C90D7628E9F57E0079F928 /* TopMoversItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoversItemView.swift; sourceTree = "<group>"; };
+		58C90D7828EA02EA0079F928 /* AllCoinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoinsView.swift; sourceTree = "<group>"; };
+		58C90D7A28EA02FC0079F928 /* RowCoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowCoinView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,8 @@
 				58C90D7128E79C540079F928 /* HomeView.swift */,
 				58C90D7428E9F55F0079F928 /* TopMoversView.swift */,
 				58C90D7628E9F57E0079F928 /* TopMoversItemView.swift */,
+				58C90D7828EA02EA0079F928 /* AllCoinsView.swift */,
+				58C90D7A28EA02FC0079F928 /* RowCoinView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				58C90D7528E9F55F0079F928 /* TopMoversView.swift in Sources */,
+				58C90D7B28EA02FC0079F928 /* RowCoinView.swift in Sources */,
+				58C90D7928EA02EA0079F928 /* AllCoinsView.swift in Sources */,
 				58C90D7228E79C540079F928 /* HomeView.swift in Sources */,
 				58C90D5D28E76D8A0079F928 /* ContentView.swift in Sources */,
 				58C90D5B28E76D8A0079F928 /* CryptoPricesAppApp.swift in Sources */,

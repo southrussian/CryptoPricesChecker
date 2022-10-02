@@ -14,6 +14,8 @@ struct HomeView: View {
                 
                 // курс топовых монет
                 TopMoversView()
+                Divider()
+                AllCoinsView()
                 
                 // общий список всех монет
                 
