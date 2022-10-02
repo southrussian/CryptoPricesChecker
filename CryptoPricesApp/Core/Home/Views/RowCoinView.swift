@@ -33,10 +33,10 @@ struct RowCoinView: View {
             .padding(.leading, 2)
             Spacer()
             VStack(alignment: .trailing, spacing: 2) {
-                Text("\(coin.currentPrice)")
+                Text("$\(coin.currentPrice)")
                     .font(.title3)
                     .fontWeight(.semibold)
-                Text("\(coin.priceChangePercentage24H)")
+                Text("\(coin.priceChangePercentage24H)%")
                     .font(.caption)
                     .fontWeight(.light)
                     .foregroundColor(.red)

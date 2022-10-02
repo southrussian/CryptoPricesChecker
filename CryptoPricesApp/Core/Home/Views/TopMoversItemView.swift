@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TopMoversItemView: View {
+    let coin: CoinData
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             Image(systemName: "bitcoinsign.circle.fill")
@@ -17,16 +18,16 @@ struct TopMoversItemView: View {
                 .padding(.bottom, 8)
             
             HStack(spacing: 2) {
-                Text("BTC")
+                Text("\(coin.symbol.uppercased())")
                     .font(.caption)
                     .fontWeight(.bold)
                 
-                Text("$20,300.00")
+                Text("$\(coin.currentPrice)")
                     .font(.caption)
                     .foregroundColor(.gray)
             }
             
-            Text("+ 5.6%")
+            Text("\(coin.priceChangePercentage24H)%")
                 .foregroundColor(.green)
                   
         }
@@ -36,8 +37,8 @@ struct TopMoversItemView: View {
     }
 }
 
-struct TopMoversItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        TopMoversItemView()
-    }
-}
+//struct TopMoversItemView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        TopMoversItemView(coin: <#CoinData#>)
+//    }
+//}

@@ -11,6 +11,8 @@ import SwiftUI
 
 class HomeViewModel: ObservableObject {
     @Published var coins = [CoinData]()
+    @Published var topMovingCoins = [CoinData]()
+
     func fetchCoin() {
     
         let urlStr = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=24h"
@@ -32,14 +34,21 @@ class HomeViewModel: ObservableObject {
             
             do {
                 let coins = try JSONDecoder().decode([CoinData].self, from: data)
-//                print("DEBUG: Coins \(coins)")
-                self.coins = coins
+                DispatchQueue.main.async {
+                    self.coins = coins
+                    self.configTopMovingCoins()
+                }
             } catch let error {
                 print("DEBUG: Failed \(error)")
             }
         }
         .resume()
         
+    }
+    
+    func configTopMovingCoins() {
+        let topCoins = coins.sorted(by: { $0.priceChangePercentage24H > $1.priceChangePercentage24H})
+        self.topMovingCoins = Array(topCoins.prefix(5))
     }
     
     init() {

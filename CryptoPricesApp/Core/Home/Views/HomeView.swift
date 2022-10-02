@@ -15,7 +15,7 @@ struct HomeView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 
                 // курс топовых монет
-                TopMoversView()
+                TopMoversView(viewModel: HomeViewModel())
                 Divider()
                 AllCoinsView(viewModel: viewModel)
                 
