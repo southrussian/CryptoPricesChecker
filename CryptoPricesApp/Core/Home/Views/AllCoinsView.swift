@@ -15,7 +15,7 @@ struct AllCoinsView: View {
                 .padding(.horizontal)
                 .font(.headline)
                 .fontWeight(.semibold)
-                .foregroundColor(.black)
+                .foregroundColor(.gray)
             
             
             HStack {

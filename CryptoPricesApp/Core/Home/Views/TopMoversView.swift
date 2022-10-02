@@ -12,7 +12,7 @@ struct TopMoversView: View {
         VStack(alignment: .leading) {
             Text("Наибольший рост")
                 .font(.headline)
-                .foregroundColor(.black)
+                .foregroundColor(.gray)
             
             ScrollView(.horizontal) {
                 HStack(spacing: 9) {
