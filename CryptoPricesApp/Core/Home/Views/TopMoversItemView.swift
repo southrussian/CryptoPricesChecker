@@ -24,7 +24,7 @@ struct TopMoversItemView: View {
                     .font(.caption)
                     .fontWeight(.bold)
                 
-                Text("$\(coin.currentPrice.toCurrencyThreeDecimals())")
+                Text("\(coin.currentPrice.toCurrencyThreeDecimals())")
                     .font(.caption)
                     .foregroundColor(.gray)
             }

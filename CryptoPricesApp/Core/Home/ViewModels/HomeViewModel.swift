@@ -29,7 +29,7 @@ class HomeViewModel: ObservableObject {
             }
             
             guard let data = data else { return }
-            let dataStr = String(data: data, encoding: .utf8)
+//            let dataStr = String(data: data, encoding: .utf8)
 //            print("DEBUG: Data \(String(describing: dataStr))")
             
             do {

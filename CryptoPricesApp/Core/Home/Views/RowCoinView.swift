@@ -35,7 +35,7 @@ struct RowCoinView: View {
             .padding(.leading, 2)
             Spacer()
             VStack(alignment: .trailing, spacing: 2) {
-                Text("$\(coin.currentPrice.toCurrencyThreeDecimals())")
+                Text("\(coin.currentPrice.toCurrencyThreeDecimals())")
                     .font(.title3)
                     .fontWeight(.semibold)
                 Text("\(coin.priceChangePercentage24H)%")

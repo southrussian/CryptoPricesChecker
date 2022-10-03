@@ -39,6 +39,7 @@ struct AllCoinsView: View {
                 VStack {
                     ForEach(viewModel.coins) { coin in
                         RowCoinView(coin: coin)
+                        Divider()
                     }
                 }
             }
